@@ -42,7 +42,9 @@ Cette DLL vient compléter le comportement natif de Windows en ajoutant une règ
 
 6. Choisir un emplacement d’enregistrement et cliquer sur « Créer »
 
-![](C:\Users\m.senerchia\AppData\Roaming\marktext\images\2025-07-21-12-41-24-image.png)
+
+
+![01_Bibliothèque DLL](.\img\01_Bibliothèque%20DLL.png)
 
 ### Étape 2 : Configurer le projet
 
@@ -52,7 +54,7 @@ Dans l’explorateur de solutions :
 
 - Dans **Configuration**, sélectionner **Release**
 
-- Dans **Plateforme cible**, sélectionner **x64** (requis pour être compatible avec LSASS)
+- Dans **Plateforme cible**, sélectionner **x64** (requis pour être compatible avec LSASS)![Plateforme cible x64](img/02_Plateforme cible.PNG)
 
 ### Étape 3 : Désactiver la précompilation
 
@@ -62,11 +64,9 @@ Dans l’explorateur de solutions :
 
 - Régler **Utiliser l’en-tête précompilé** sur **Non (/Y-)**
 
-![](C:\Users\m.senerchia\AppData\Roaming\marktext\images\2025-07-21-12-41-45-image.png) 
+![Précompilation 1](img/03_précompilation_I.PNG) 
 
-![](C:\Users\m.senerchia\AppData\Roaming\marktext\images\2025-07-21-12-41-57-image.png)
-
-### Étape 4 : Ajouter le code source
+![Précompilation 2](img/04_précompilation_I.PNG)### Étape 4 : Ajouter le code source
 
 Remplacer un fichier `dllmain.cpp` et y insérer le code de filtrage des mots de passe.
 
@@ -115,9 +115,7 @@ HKLM\SYSTEM\CurrentControlSet\Control\Lsa
 
 - Ajouter `MyPassFilt` à la liste (ne pas ajouter `.dll`)
 
-![](C:\Users\m.senerchia\AppData\Roaming\marktext\images\2025-07-21-12-42-47-image.png)
-
-3. Redémarrer le poste pour que LSASS prenne en compte la DLL
+![Clé Notification Packages](img/05_regedit.png)Redémarrer le poste pour que LSASS prenne en compte la DLL
 
 ---
 
