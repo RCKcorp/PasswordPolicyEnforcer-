@@ -42,9 +42,7 @@ Cette DLL vient compléter le comportement natif de Windows en ajoutant une règ
 
 6. Choisir un emplacement d’enregistrement et cliquer sur « Créer »
 
-
-
-![01_Bibliothèque DLL](.\img\01_Bibliothèque%20DLL.png)
+![Création d'une DLL](img/01_Bibliothèque DLL.png)
 
 ### Étape 2 : Configurer le projet
 
