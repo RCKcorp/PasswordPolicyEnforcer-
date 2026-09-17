@@ -1,0 +1,31 @@
+# Visual Studio / C++ build outputs
+.vs/
+x64/
+x86/
+Debug/
+Release/
+*.dll
+*.obj
+*.pdb
+*.ilk
+*.exp
+*.lib
+*.user
+*.suo
+
+# Secrets / local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+secrets/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
